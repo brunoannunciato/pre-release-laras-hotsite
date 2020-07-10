@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 html, body {
 	height: 100vh;
 	font-family: 'Raleway', sans-serif;
@@ -25,7 +27,6 @@ html, body {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 	justify-content: center;
 	width: 100%;
 }
@@ -37,7 +38,11 @@ html, body {
 
 .logo {
 	max-width: 300px;
-	margin-bottom: 25px;
+	margin: 48px 0;
+}
+
+.video-highlight {
+  margin-bottom: 32px;
 }
 
 .social-wrapper {
@@ -47,7 +52,8 @@ html, body {
 .icon-wrapper {
 	font-size: 30px;
 	margin: 0 15px;
-	transition: transform .3s ease;
+  transition: transform .3s ease;
+  margin-bottom: 32px;
 }
 
 .icon-wrapper:hover {
@@ -59,7 +65,14 @@ html, body {
 		height: initial;
 		overflow: scroll;
 		padding: 12px;
-	}
+  }
+  
+  .video-highlight {
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 	.video {
 		height: 100vh;
